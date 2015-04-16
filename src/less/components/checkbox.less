@@ -21,16 +21,15 @@
 		margin: 0 0 2px 0;
 		.margin-right(@rtl, @spacingXs);
 		.margin-left(@rtl, -20px);
-		border: 1px solid @inputBorder;
 		border-radius: 2px;
 		vertical-align: middle;
 		text-align: center;
-
+    .border-radius(4px);
 		&:after {
 			content: "v";
 			font-family: 'Viadeoicons';
 		  font-size: 6px;
-		  color: tint(@black, 20%);
+		  color: @white;
 		  visibility: hidden;
 		}
 	}
@@ -42,6 +41,7 @@
 	}
 
 	input:checked + .custom-checkbox-element {
+    background-color: @green3;
 		&:after {
 		  visibility: visible;
 		}

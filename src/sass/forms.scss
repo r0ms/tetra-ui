@@ -71,7 +71,7 @@
     display: inline-block;
     width: 210px;
     height: $baseLineHeight;
-    padding: 4px;
+    padding: 5px;
     margin-bottom: 9px;
     font-size: $baseFontSize;
     line-height: $baseLineHeight;
@@ -143,9 +143,10 @@
   // Chrome on Linux and Mobile Safari need background-color
   select {
     width: 220px; // default input width + 10px of padding that doesn't get applied
-    background-color: $inputBackground;
     height: 28px; // In IE7, the height of the select element cannot be changed by height, only font-size
     line-height: 28px;
+    @include gradient-vertical($white, $pageBg);
+    color : $grayDark;
   }
 
   // Make multiple select elements height not fixed
